@@ -10,7 +10,7 @@ function arraySum(numbers){
         sum += num;
     }
     numbers.forEach(add);
-    
+
     /*for (let i = 0; i < arr.length; i++){
         sum += arr[i];
     }*/  
@@ -27,7 +27,14 @@ let book = {
     pages: 518,
     readCount: 5,
 }
-book.info = `${book.title} by ${book.author}, ${book.pages} pages, read ${book.readCount} times.`;
-console.log(book.info);
+
+function info(){
+    console.log(`${this.title} by ${this.author}, ${this.pages} pages, read ${this.readCount} times.`);
+};
+book.info = info;
+
+
+//book.info = `${book.title} by ${book.author}, ${book.pages} pages, read ${book.readCount} times.`;
+book.info();
 
 
