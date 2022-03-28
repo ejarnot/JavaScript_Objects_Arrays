@@ -32,9 +32,9 @@ function info(){
     console.log(`${this.title} by ${this.author}, ${this.pages} pages, read ${this.readCount} times.`);
 };
 book.info = info;
-
+book.info();
 
 //book.info = `${book.title} by ${book.author}, ${book.pages} pages, read ${book.readCount} times.`;
-book.info();
+// console.log(book.info);
 
 
